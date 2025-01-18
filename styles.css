@@ -1,0 +1,97 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.bgimg {
+  background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg'); /* Change to your preferred background */
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Audio Player Panel */
+.audio-panel {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+/* Audio Controls */
+.audio-controls {
+  margin-top: 20px;
+}
+
+.control-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.control-btn:hover {
+  background-color: #45a049;
+}
+
+.control-btn:focus {
+  outline: none;
+}
+
+/* Title Text */
+.audio-title {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Audio List Section Below the Player */
+.audio-list {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.audio-select {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Play Button */
+.play-btn {
+  background-color: #f5a623;
+  color: white;
+  padding: 20px 40px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.play-btn:hover {
+  background-color: #e84a5f;
+}
+
+.play-btn:focus {
+  outline: none;
+}
