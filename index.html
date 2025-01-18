@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>W3.CSS Template</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,h1 { font-family: "Raleway", sans-serif; }
+    body, html { height: 100%; margin: 0; }
+    .bgimg {
+      background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg'); /* Example URL */
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    /* Premium button styling */
+    .button {
+      background: linear-gradient(45deg, #f5a623, #e84a5f); /* Gradient background */
+      border: none;
+      color: white;
+      padding: 15px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-radius: 30px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+      transition: all 0.3s ease; /* Smooth transition */
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: linear-gradient(45deg, #e84a5f, #f5a623); /* Reverse gradient on hover */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+      transform: translateY(-3px); /* Slightly lift the button */
+    }
+
+    .button:focus {
+      outline: none; /* Remove outline on focus */
+    }
+
+    .button:active {
+      transform: translateY(1px); /* Button slightly pushed when clicked */
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Shadow after click */
+    }
+
+    /* Centering the content of the middle section */
+    .w3-display-middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    aPPLE101
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">MUSIC GALLERY</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center" id="current-time"></p>
+    <!-- Premium Button Below the Current Date and Time, Centered -->
+    <a href="audio.html" class="button">Explore Now</a>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+</div>
+
+<script>
+  // Function to get current date and time
+  function getCurrentDateTime() {
+    var currentDateTime = new Date();
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+    return currentDateTime.toLocaleString('en-US', options);
+  }
+
+  // Display the current date and time in the "current-time" element
+  document.getElementById('current-time').innerText = getCurrentDateTime();
+</script>
+
+</body>
+</html>
